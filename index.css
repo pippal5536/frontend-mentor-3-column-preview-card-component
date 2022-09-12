@@ -4,10 +4,81 @@
   font-size: 100%;
   box-sizing: border-box;
 }
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
 body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 95%);
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 5rem 0;
+}
+.card {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 0 3rem;
+}
+#sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+#suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+#luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.card-header {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+.preview {
+  line-height: 2em;
+}
+.card button {
+  border: none;
+  text-transform: capitalize;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 4rem;
+  width: 70%;
+  padding: 1rem;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.card button:hover {
+  background-color: inherit;
+}
+
+#sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+#suvs button {
+  color: hsl(184, 100%, 22%);
+}
+#luxury button {
+  color: hsl(179, 100%, 13%);
+}
+#sedans button:hover,
+#suvs button:hover,
+#luxury button:hover {
+  color: hsl(0, 0%, 95%);
 }
