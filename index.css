@@ -65,6 +65,7 @@ body {
 }
 .card button:hover {
   background-color: inherit;
+  cursor: pointer;
 }
 
 #sedans button {
@@ -81,4 +82,27 @@ body {
 #suvs button:hover,
 #luxury button:hover {
   color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 1440px) {
+  .card-container {
+    flex-direction: row;
+    width: 55rem;
+  }
+  .card {
+    width: 45rem;
+    height: 30rem;
+  }
+  #sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  #luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .preview {
+    line-height: 1.6em;
+  }
+  .card button {
+    margin-top: 5rem;
+  }
 }
